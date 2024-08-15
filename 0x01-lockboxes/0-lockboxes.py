@@ -1,3 +1,6 @@
+#!/usr/bin/python3
+"""Solves the lock boxes puzzle """
+
 def canUnlockAll(boxes):
     opened_boxes = set()
     stack = [0]
