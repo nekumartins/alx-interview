@@ -20,7 +20,7 @@ def minOperations(n):
     minOperations
     returns min operations needed to result in exactly n H characters
     """
-    if n == 1:
+    if n < 2:
         return 0
     largest_divisor = lar_div(n)
     return (n // largest_divisor) + minOperations(largest_divisor)
