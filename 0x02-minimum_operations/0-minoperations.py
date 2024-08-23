@@ -6,6 +6,9 @@ import math
 
 
 def lar_div(n):
+    """
+    returns largest divisor of n
+    """
     for i in range(2, int(math.sqrt(n)) + 1):
         if n % i == 0:
             return n // i
@@ -13,6 +16,10 @@ def lar_div(n):
 
 
 def minOperations(n):
+    """
+    minOperations
+    returns min operations needed to result in exactly n H characters
+    """
     if n == 1:
         return 0
     largest_divisor = lar_div(n)
